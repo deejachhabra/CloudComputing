@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html>
+    <head>
+        <title>haha</title>
+    </head>
+    <body>
+        {% block content %}        
+        
+        <img src="{{ user_image }}" alt="User Image" width="200" height = "200">
+        {{ user_image }}  
+        <br>
+        <a href="{{ url_for('show') }}">Images and Details</a><br>
+        <br>
+        <a href="{{ url_for('getRange') }}">Range</a><br>
+        <br>
+        <a href="{{ url_for('nameC') }}">Change the details here</a>
+        {% endblock %}          
+
+    </body>
+
+</html>

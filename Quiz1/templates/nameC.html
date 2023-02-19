@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html>
+    {% block content %}
+    <form action = "/nameResult.html" method = "post">
+        <label for = "fname"> Name</label>
+        <input type = "text" name = "fname" /><br><br>
+        <label for="fcomm">Comment to be changed</label>
+        <input type = "text" name = "fcomm"/><br>
+        <label for = "fincome"> Income to be changed</label>
+        <input type = "text" name = "fincome" /><br>
+        <input type = "submit" value = "Submit"/>
+    </form>
+    {% endblock %}
+</html>

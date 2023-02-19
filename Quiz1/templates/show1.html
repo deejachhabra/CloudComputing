@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html>
+    {% block content %}
+    <!-- <form action = "/show" method = "post">
+        <input type = "submit" value = "GET RESULT"/>
+    </form> -->
+    
+    {% for i in range(len) %}
+        <h3> {{ name[i] }} </h3>
+        {% if pic[i] == "no picture found" %}
+        {% print("No pic") %}
+        {% else %}
+        <img src="{{ pic[i] }}" width="200" height="200" \>
+        {{ pic[i] }}
+        {% endif %}
+        <h4>{{ cla[i] }} </h4>
+        <h4>{{ income[i] }} </h4>
+        <h4>{{ comments[i] }} </h4>
+        {% endfor %}
+    {% endblock %}
+</html>
