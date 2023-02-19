@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Results</title>
+    </head>
+    <body>
+        <label for ="home"><a href="/"target="_self">Home page</a></label>
+        <br>
+        {% for pic in pic_path %}
+        <img src="{{pic}}" alt="Preview" width = "400" height="400">
+        {% endfor %}
+
+        <input type = "button" value="Refresh"/>
+
+        {% if error %}
+        {{ error }}
+        {% endif %}
+    </body>
+</html>

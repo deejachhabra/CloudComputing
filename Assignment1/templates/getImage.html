@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>See below</title>
+    </head>
+    <body>
+        <label for="home - back">
+            <a href="/" target="_self">Home Page</a> 
+            &nbsp &nbsp &nbsp
+            <a href="/imgsearch" target="_self">Back</a>
+        </label>
+
+        {%if message %}
+        <img src="{{ path }}" alt="Preview" width="400" height="400"/> 
+        {% endif %}{% if error %}{{ error }}{% endif %}
+    </body
+</html>
