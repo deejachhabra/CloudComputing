@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block title %}{% endblock %}
+{% block content %}
+<h1>total entries:{{num}}</h1>
+<table>
+    <thead>
+        <th> Day </th>
+        <th> Night </th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{num1}}</td>
+            <td>{{num2}}</td>
+        </tr>
+    </tbody>
+</table>
+{% if num1 == num2%}
+<h2>There occured equivalent earthquakes in daytime and nighttime</h2>
+{% endif %}
+{% if num1 > num2 %}
+<h2>There occured more earthquakes in daytime</h2>
+{% elif num2 > num1  %}
+<h2>There occured more earthquakes in nighttime</h2>
+{% endif %}
+{% endblock %}
+
+

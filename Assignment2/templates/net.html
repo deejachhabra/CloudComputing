@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block title %}{% endblock %}
+{% block content %}
+<body>
+    <form action ="/netval", method = "POST">
+        <br>
+        <br>
+        <label for="loc"> Enter Location </label>
+        <input type = "text" id="loc" name = "loc" />
+        <label for="mgs"> Enter Magnitude </label>
+        <input type = "text" id="mgs" name = "mgs" />
+        <input type="submit" value="submit" />
+    </form>
+</body>
+{% endblock %}

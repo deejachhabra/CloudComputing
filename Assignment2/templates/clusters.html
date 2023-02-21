@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block title %}{% endblock %}
+{% block content %}
+<body>
+    <form action ="/clusters_out", method = "POST">
+        <br>
+        <label for="clusters"> Enter location </label>
+        <input type = "text" name = "clusters"/>
+        <br>
+        <input type="submit" value="submit" />
+    </form>
+</body>
+{% endblock %}

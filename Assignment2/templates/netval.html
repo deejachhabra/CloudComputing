@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block title %}{% endblock %}
+{% block content %}
+<h1>total entries:{{num}}</h1>
+<table>
+    <thead>
+        <th> Place </th>
+        <th> Magnitude </th>
+        <th> Latitude </th>
+        <th> Longitude </th>
+        <th> Location </th>
+    </thead>
+    <tbody>
+        {% for r in rows %}
+        <tr>
+            <td>{{r[0]}}</td>
+            <td>{{r[1]}}</td>
+            <td>{{r[2]}}</td>
+            <td>{{r[3]}}</td>
+            <td> {{r[4]}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
+
+

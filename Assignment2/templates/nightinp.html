@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block title %}{% endblock %}
+{% block content %}
+<body>
+    <form action ="/night", method = "POST">
+        <br>
+        <br>
+        <label for="times"> Enter Time </label>
+        <input type = "time" id="times" name = "times"/>
+        <br>
+        <label for="etimes"> Enter end Time </label>
+        <input type = "time" id="etimes" name = "etimes"/>
+        <input type="submit" value="submit" />
+    </form>
+</body>
+{% endblock %}

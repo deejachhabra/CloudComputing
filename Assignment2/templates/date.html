@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block title %}{% endblock %}
+{% block content %}
+<body>
+    <form action ="/duration", method = "POST">
+        <br>
+        <br>
+        <label for="startDate"> Start Date </label>
+        <input type = "date" id="startDate" name = "startDate"/>
+        <br>
+        <label for="endDate">END DATE</label> 
+        <input type="date" id="endDate" name="endDate" />
+        <br>
+        <br>
+        <label for="roomNo">GIVE NUMBER RANGE:
+        <input type="text" name="low" placeholder="LOW" size="8" />
+        <input type="text" name="high" placeholder="HIGH" size="8" /></label>
+        <br>
+        <br>
+        <input type="submit" value="submit" />
+    </form>
+</body>
+{% endblock %}

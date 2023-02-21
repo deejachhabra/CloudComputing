@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block title %}{% endblock %}
+{% block content %}
+<body>
+    <form action ="/result", method = "POST">
+        <br>
+        <br>
+        <label for="mg"> Enter Magnitude </label>
+        <input type = "text" id="mg" name = "mg" />
+        <input type="submit" value="submit" />
+    </form>
+</body>
+{% endblock %}
